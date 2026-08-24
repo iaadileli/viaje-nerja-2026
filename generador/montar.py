@@ -11,7 +11,7 @@ PIEZAS = ['head-nuevo.html', 'css-base.html', 'c1-cabecera.html', 'c2-mapa.html'
           'c3-nerja.html', 'c4-frigiliana.html', 'c6-malaga.html', 'c7-comer.html',
           'c8-practico.html', 'c9-footer.html', '3-scripts.html']
 # sección de la web -> fichero de comida
-COMIDA = {'nerja': 'nerja', 'frigiliana': 'frigiliana', 'axarquia': 'axarquia', 'malaga': 'malaga'}
+COMIDA = {'nerja': 'nerja', 'frigiliana': 'frigiliana', 'malaga': 'malaga'}
 
 leyenda = open(P + 'comer/leyenda.html').read()
 partes = []

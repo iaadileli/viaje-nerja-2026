@@ -1,6 +1,6 @@
 # Una semana en Nerja · 2026
 
-Del **7 al 14 de septiembre de 2026**, siete noches con base fija en Nerja.
+Del **7 al 13 de septiembre de 2026**, seis noches con base fija en Nerja.
 Tren hasta Málaga María Zambrano y coche de alquiler allí mismo.
 
 👉 **Ver la web:** https://iaadileli.github.io/viaje-nerja-2026/
@@ -64,7 +64,7 @@ node generador/revisar.mjs        # abre la página de verdad y la recorre
 ```
 
 Comprueba con la página **en marcha** lo que no se ve leyendo el HTML: que ningún texto se
-pinte dos veces, que las flechas ‹ › recorran los 8 días, que todos los días tengan dónde comer,
+pinte dos veces, que las flechas ‹ › recorran los 7 días, que todos los días tengan dónde comer,
 que las tablas no desborden en móvil, que no haya enlaces internos rotos ni errores de
 JavaScript. Sale con código 1 si algo falla.
 Necesita Playwright (`npm i -D playwright && npx playwright install chromium`).

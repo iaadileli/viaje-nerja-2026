@@ -16,11 +16,11 @@ META = {
  '02-cuevas-nerja-guia':   ('Las Cuevas de Nerja', 'nerja-2a', 'guia'),
  '03-maro-acantilados':    ('Los acantilados de Maro y Cerro Gordo', 'nerja-3', 'fondo'),
  '04-rio-chillar':         ('El río Chíllar: por qué se anda por dentro', 'nerja-4', 'guia'),
- '07-verano-azul':         ('Verano azul: cómo una serie construyó un pueblo', 'nerja-7', 'fondo'),
- '08-el-dia-de-volver':    ('El día de volver', 'nerja-8', 'fondo'),
+ '07-verano-azul':         ('Verano azul: cómo una serie construyó un pueblo', 'nerja-6', 'fondo'),
+ '08-el-dia-de-volver':    ('El día de volver', 'nerja-7', 'fondo'),
  # Frigiliana y la Axarquía
  '02-frigiliana-guia':     ('Frigiliana: cómo se lee un pueblo morisco', 'frigiliana-2b', 'guia'),
- '06-competa-vino':        ('Cómpeta, el moscatel y las pasas', 'axarquia-6', 'guia'),
+ '06-competa-vino':        ('Cómpeta, el moscatel y las pasas', 'tren', 'fondo'),
  # Málaga
  '05-malaga-historia':     ('Málaga: tres mil años de puerto', 'malaga-5', 'fondo'),
  '05-alcazaba-capsula':    ('La Alcazaba y Gibralfaro', 'malaga-5', 'capsula'),

@@ -21,7 +21,7 @@ capa = Image.new('RGB', (W, H), (6, 26, 38))
 im = Image.composite(capa, im, grad.resize((W, H)))
 
 d = ImageDraw.Draw(im)
-d.text((64, 372), 'DEL 7 AL 14 DE SEPTIEMBRE DE 2026',
+d.text((64, 372), 'DEL 7 AL 13 DE SEPTIEMBRE DE 2026',
        font=ImageFont.truetype(SANS_B, 25), fill=(214, 231, 240))
 d.text((60, 414), 'Una semana en Nerja',
        font=ImageFont.truetype(SERIF, 76), fill='white')
