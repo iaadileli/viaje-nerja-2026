@@ -1,0 +1,86 @@
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="fechas">Del 7 al 14 de septiembre de 2026 · 7 noches · tren a Málaga y coche de alquiler</div>
+    <h1>Una semana en Nerja</h1>
+    <p class="sub">Base fija junto al mar y nada a más de cuarenta minutos: las calas de Maro,
+    los pueblos blancos de la Axarquía, el río Chíllar y un día en Málaga.</p>
+  </div>
+</header>
+
+<nav class="sans"><div class="nav-inner"><a href="#hoy" class="btn-hoy" aria-label="Ir al plan de hoy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Hoy</span></a><div class="wrap">
+  <a href="#ruta">La semana</a>
+  <a href="#mapa">Mapa</a>
+  <a href="#nerja">Nerja y Maro</a>
+  <a href="#frigiliana">Frigiliana</a>
+  <a href="#axarquia">La Axarquía</a>
+  <a href="#malaga">Málaga</a>
+  <a href="#playas">Playas</a>
+  <a href="#comer">Comer</a>
+</div>
+  <div class="buscador sans">
+    <span class="lupa">🔍</span>
+    <input id="buscar" type="search" placeholder="Buscar…" aria-label="Buscar en la guía" autocomplete="off">
+    <div class="resultados" id="resultados"></div>
+  </div>
+  <button id="tema" class="tema-btn sans" aria-label="Cambiar a modo oscuro">☾</button>
+  <button id="menuBtn" class="menu-btn" onclick="toggleMenuInfo(event)" aria-label="Menú de información práctica" aria-expanded="false">
+    <span class="bars">☰</span><span>Info</span>
+  </button>
+  <div class="menu-panel" id="menuInfo">
+    <button id="temaMenu" class="tema-en-menu">☾ Modo oscuro</button>
+    <div class="cab">Sobre la marcha</div>
+    <a href="#playas" onclick="cerrarMenuInfo()">🏖️ Playas y calas</a>
+    <a href="#acaso" onclick="cerrarMenuInfo()">🆘 Por si acaso</a>
+    <a href="#comer" onclick="cerrarMenuInfo()">🐟 Comer (todo)</a>
+    <a href="#hoteles" onclick="cerrarMenuInfo()">★ Vuestro alojamiento</a>
+    <div class="cab cab2">Preparativos</div>
+    <a href="#entradas" onclick="cerrarMenuInfo()">🎟️ Lo poco que hay que reservar</a>
+    <a href="#coche" onclick="cerrarMenuInfo()">🚗 Tren, coche y aparcar</a>
+    <a href="#tiempo" onclick="cerrarMenuInfo()">🌡️ El tiempo y la maleta</a>
+    <a href="#practico" onclick="cerrarMenuInfo()">🧭 Guía práctica</a>
+    <a href="#presupuesto" onclick="cerrarMenuInfo()">💰 Presupuesto</a>
+    <a href="#offline" onclick="cerrarMenuInfo()">📥 Guardarla en el móvil</a>
+  </div>
+</div></nav>
+
+<section id="hoy" aria-live="polite"></section>
+
+<main>
+
+<section class="resumen" id="ruta">
+  <div class="kicker">De un vistazo</div>
+  <h2>La semana</h2>
+  <p class="intro">Ocho días con una sola maleta que se deshace una vez: dormís las siete noches en
+  Nerja y el coche está para trayectos cortos. El desplazamiento más largo de toda la semana es el
+  día de Málaga, y es una hora de autovía. Todo lo demás está a menos de cuarenta minutos.</p>
+
+  <ul class="timeline">
+    <li class="tr-li"><span class="tr">Tren Madrid → Málaga María Zambrano · 2 h 30 · coche de alquiler en la estación</span></li>
+    <li><span class="etapa">Lunes 7 · Llegada y Balcón de Europa</span>
+      <div class="det">Málaga → Nerja en coche (1 h). Tarde de paseo, el Balcón al atardecer y primera cena junto al mar.</div></li>
+    <li><span class="etapa">Martes 8 · Cuevas de Nerja y Frigiliana</span>
+      <div class="det">La cueva a primera hora, comida tranquila y el pueblo blanco a media tarde, cuando deja de pegar el sol.</div></li>
+    <li><span class="etapa">Miércoles 9 · Las calas de Maro</span>
+      <div class="det">El paraje natural: playa de Maro, la cascada y, si os animáis, kayak por los acantilados. Sin horarios.</div></li>
+    <li><span class="etapa">Jueves 10 · El río Chíllar</span>
+      <div class="det">Andar por dentro del río con el agua por las rodillas hasta los Cahorros. La mañana más divertida de la semana.</div></li>
+    <li class="tr-li coche"><span class="tr">Nerja → Málaga · 1 h por la A-7</span></li>
+    <li><span class="etapa">Viernes 11 · Málaga capital</span>
+      <div class="det">Alcazaba, Gibralfaro, el centro, el Picasso si apetece y espetos en Pedregalejo al atardecer.</div></li>
+    <li><span class="etapa">Sábado 12 · La Axarquía de dentro</span>
+      <div class="det">Cómpeta y los pueblos del moscatel, con bodega y comida en la sierra. Cuarenta minutos de subida.</div></li>
+    <li><span class="etapa">Domingo 13 · Playa y nada más</span>
+      <div class="det">Burriana con hamaca o las calas de la carretera de Maro. El día sin plan, que también hay que tenerlo.</div></li>
+    <li><span class="etapa">Lunes 14 · Vuelta</span>
+      <div class="det">Mañana tranquila en Nerja, coche a Málaga, entrega en la estación y tren de vuelta.</div></li>
+  </ul>
+
+  <div class="claves">
+    <div class="clave"><div class="n">7</div><div class="t">noches, todas en el mismo sitio</div></div>
+    <div class="clave"><div class="n">40′</div><div class="t">el trayecto más largo, salvo el día de Málaga</div></div>
+    <div class="clave"><div class="n">28°</div><div class="t">de media en septiembre, y el mar a 24°</div></div>
+    <div class="clave"><div class="n">1</div><div class="t">sola cosa que hay que reservar: la cueva</div></div>
+  </div>
+</section>
