@@ -763,6 +763,19 @@
     border-radius:50%;background:var(--oro)}
   .lista-ver li b{color:var(--tinta)}
   html[data-tema="oscuro"] .lista-ver li{color:var(--tinta)}
+
+  /* --- Arreglos portados de la guía de Londres (28 ago 2026) --- */
+  /* El sello «lleva décadas abierto» heredaba la caja .leyenda del mapa
+     (padding, borde y sombra) y salía a 46x42 px en vez de 18x18. */
+  .sitios .sello.leyenda{padding:0;border:none;box-shadow:none;background:var(--teca)}
+  .leyenda-sellos i{padding:0;border:none;box-shadow:none}
+  /* Faltaba el color del sello «amigo» en el panel del «qué tengo cerca». */
+  .cerca-sello.k-amigo{background:#a8386b}
+  /* En modo oscuro estas cajas se quedaban con el fondo claro fijo y el texto
+     pasaba a claro: las descripciones de los sitios eran ilegibles. */
+  html[data-tema="oscuro"] .comer,
+  html[data-tema="oscuro"] .excel-nota,
+  html[data-tema="oscuro"] .leyenda-hoteles{background:#141c22;border-color:#26333c}
 </style>
 </head>
 <body>
@@ -2164,7 +2177,8 @@ function avisaNueva(reg){
 (function(){
   if (typeof SITIOS === 'undefined') return;
 
-  var SELLO = {leyenda:'lleva décadas abierto', bib:'Bib Gourmand', local:'donde come la gente de aquí',
+  var SELLO = {amigo:'lo recomienda quien ha estado', leyenda:'lleva décadas abierto',
+               bib:'Bib Gourmand', local:'donde come la gente de aquí',
                barato:'muy barato', cena:'mesa especial', '':''};
 
   var panel = document.createElement('div');

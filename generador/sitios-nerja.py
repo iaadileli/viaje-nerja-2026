@@ -39,6 +39,10 @@ def nominatim(q):
     except Exception: pass
     return None
 
+# El sello va con su NOMBRE, no con una letra: el JS del «qué tengo cerca» y el
+# CSS usan 'amigo'/'leyenda'/'local'/'barato'. Con las letras salía «undefined».
+NOMBRE_SELLO = {'a': 'amigo', 'v': 'leyenda', 'l': 'local', 'b': 'barato', '': ''}
+
 cache = json.load(open(CACHE)) if os.path.exists(CACHE) else {}
 out, aprox = [], []
 for nombre, zona, seccion, sello, consulta in SITIOS:
@@ -51,7 +55,7 @@ for nombre, zona, seccion, sello, consulta in SITIOS:
         cache[nombre] = [la, lo, ap]
         time.sleep(1.1)               # Nominatim pide 1 petición por segundo
     if ap: aprox.append(nombre)
-    out.append({'n': nombre, 'z': zona, 'e': seccion, 's': sello,
+    out.append({'n': nombre, 'z': zona, 'e': seccion, 's': NOMBRE_SELLO.get(sello, sello),
                 'la': la, 'lo': lo, 'ap': ap, 'q': quote(consulta)})
 
 json.dump(cache, open(CACHE,'w'), ensure_ascii=False, indent=1)
