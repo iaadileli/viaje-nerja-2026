@@ -1,4 +1,4 @@
-const CACHE = 'nerja2026-v1';
+const CACHE = 'nerja2026-v2';
 const RECURSOS = [
   './',
   'index.html',
@@ -7,6 +7,7 @@ const RECURSOS = [
   'sitios.js',
   'img/nerja-balcon-europa.jpg',
   'img/frigiliana.jpg',
+  'img/sedella.jpg',
   'img/frigiliana-calle.jpg',
   'img/competa.jpg',
   'img/competa-iglesia.jpg',

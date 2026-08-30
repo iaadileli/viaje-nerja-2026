@@ -20,13 +20,15 @@ SITIOS = [
  ('El Adarve',                'Frigiliana',         'Frigiliana', '',  'Restaurante El Adarve, Frigiliana'),
  ('Taberna del Sacristán',    'Frigiliana',         'Frigiliana', 'l', 'Taberna del Sacristán, Frigiliana'),
  ('Bodegas de moscatel',      'Cómpeta',            'Frigiliana', '',  'Cómpeta, Málaga'),
+ ('El Chiringuito',           'Sedella',            'Sedella',    'a', 'El Chiringuito, Avenida Villa del Castillo 24, Sedella, Málaga'),
+ ('Bodegas de moscatel de Cómpeta','Cómpeta, de camino','Sedella','',  'Cómpeta, Málaga'),
  ('Antigua Casa de Guardia',  'Alameda Principal',  'Málaga',     'v', 'Antigua Casa de Guardia, Alameda Principal 18, Málaga'),
  ('El Tintero',               'El Palo',            'Málaga',     'l', 'Restaurante El Tintero, El Palo, Málaga'),
  ('Mercado de Atarazanas',    'Centro de Málaga',   'Málaga',     'b', 'Mercado de Atarazanas, Málaga'),
 ]
 # centro de cada zona, como último recurso si Nominatim no encuentra el sitio
 CENTROS = {'Nerja':(36.7452,-3.8746), 'Frigiliana':(36.7896,-3.8940),
-           'Málaga':(36.7213,-4.4213)}
+           'Sedella':(36.8686,-4.0186), 'Málaga':(36.7213,-4.4213)}
 CACHE = 'generador/datos-fuente/coordenadas.json'
 
 def nominatim(q):

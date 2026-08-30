@@ -8,10 +8,10 @@ os.chdir(RAIZ)
 P = 'generador/plantilla/'
 
 PIEZAS = ['head-nuevo.html', 'css-base.html', 'c1-cabecera.html', 'c2-mapa.html',
-          'c3-nerja.html', 'c4-frigiliana.html', 'c6-malaga.html', 'c7-comer.html',
+          'c3-nerja.html', 'c4-frigiliana.html', 'c5-sedella.html', 'c6-malaga.html', 'c7-comer.html',
           'c8-practico.html', 'c9-footer.html', '3-scripts.html']
 # sección de la web -> fichero de comida
-COMIDA = {'nerja': 'nerja', 'frigiliana': 'frigiliana', 'malaga': 'malaga'}
+COMIDA = {'nerja': 'nerja', 'frigiliana': 'frigiliana', 'sedella': 'sedella', 'malaga': 'malaga'}
 
 leyenda = open(P + 'comer/leyenda.html').read()
 partes = []

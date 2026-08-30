@@ -19,7 +19,7 @@ const p = await nav.newPage({ viewport: { width: 1280, height: 900 } });
 await p.goto(URL, { waitUntil: 'networkidle' });
 await p.screenshot({ path: `${salida}/1-portada.png` });
 for (const [nombre, sel] of [['2-mapa','#mapa'], ['3-nerja','#nerja'], ['4-comida','#nerja .comer'],
-                             ['5-axarquia','#axarquia'], ['6-presupuesto','#presupuesto']]) {
+                             ['5-sedella','#sedella'], ['5b-sedella-comer','#sedella .comer'], ['6-presupuesto','#presupuesto']]) {
   const el = await p.$(sel);
   if (el) { await el.scrollIntoViewIfNeeded(); await p.waitForTimeout(350);
             await p.screenshot({ path: `${salida}/${nombre}.png` }); }

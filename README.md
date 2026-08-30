@@ -5,8 +5,9 @@ Tren hasta Málaga María Zambrano y coche de alquiler allí mismo.
 
 👉 **Ver la web:** https://iaadileli.github.io/viaje-nerja-2026/
 
-Nada a más de cuarenta minutos salvo el día de Málaga: las calas de Maro, el río Chíllar,
-Frigiliana, los pueblos del moscatel de la Axarquía y un día en la capital.
+Nada a más de cuarenta minutos salvo el día de Málaga y la subida a Sedella: las calas de Maro,
+el río Chíllar, Frigiliana, los pueblos del moscatel de la Axarquía, un día en la capital y una
+comida en El Chiringuito, el Bib Gourmand que hay bajo La Maroma.
 Mapa, día a día con fotos, qué y dónde comer, playas, presupuesto y audioguía.
 
 ## Cómo está montado
@@ -26,7 +27,7 @@ python3 generador/portada.py      # regenera img/portada.jpg y los iconos
 
 Las piezas son: `head-nuevo.html` (metadatos), `css-base.html` (todo el CSS),
 `c1-cabecera.html` (hero, menú y la semana), `c2-mapa.html` (el SVG dibujado a mano),
-`c3-nerja.html`, `c4-frigiliana.html` (Frigiliana + la Axarquía), `c6-malaga.html`,
+`c3-nerja.html`, `c4-frigiliana.html` (Frigiliana + la Axarquía), `c5-sedella.html`, `c6-malaga.html`,
 `c7-comer.html`, `c8-practico.html`, `c9-footer.html` y `3-scripts.html`.
 
 Los bloques de «qué y dónde comer» viven aparte, en `generador/plantilla/comer/`, y `montar.py`
