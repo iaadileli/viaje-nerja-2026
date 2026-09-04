@@ -1,6 +1,6 @@
 # Audioguía
 
-15 pistas locutadas con edge-tts (voz es-ES-AlvaroNeural).
+16 pistas locutadas con edge-tts (voz es-ES-AlvaroNeural).
 
 - `guiones/*.txt` — el texto de cada audio. Es la fuente: se edita aquí.
 - `generar.sh` — regenera los MP3 cuyo guion se haya tocado. Necesita el entorno

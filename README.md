@@ -36,7 +36,7 @@ los inyecta dentro de la sección que les toca: el JS del plan de «hoy» busca 
 
 ## Audioguía
 
-15 pistas, unos 50 minutos, en `audio/`. Los guiones son la fuente (`audio/guiones/*.txt`).
+16 pistas, unos 46 minutos, en `audio/`. Los guiones son la fuente (`audio/guiones/*.txt`).
 
 ```bash
 cd audio && ./generar.sh && ~/.local/venvs/tts/bin/python catalogo.py

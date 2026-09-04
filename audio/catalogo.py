@@ -20,6 +20,7 @@ META = {
  '08-el-dia-de-volver':    ('El día de volver', 'nerja-7', 'fondo'),
  # Frigiliana y la Axarquía
  '02-frigiliana-guia':     ('Frigiliana: cómo se lee un pueblo morisco', 'frigiliana-2b', 'guia'),
+ '06-sedella-guia':        ('Sedella: el pueblo que se llama así por una frase', 'sedella-6b', 'guia'),
  '06-competa-vino':        ('Cómpeta, el moscatel y las pasas', 'tren', 'fondo'),
  # Málaga
  '05-malaga-historia':     ('Málaga: tres mil años de puerto', 'malaga-5', 'fondo'),
